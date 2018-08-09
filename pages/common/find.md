@@ -14,6 +14,10 @@
 
 `find {{root_path}} -name '{{*.ext}}' -exec {{wc -l {} }}\;`
 
+- Run a command for all files as a file list
+
+`find {{root_path}} -name '{{*.ext}}' -exec {{stat {} +}}`
+
 - Find files modified in the last 24-hour period:
 
 `find {{root_path}} -mtime {{-1}}`
